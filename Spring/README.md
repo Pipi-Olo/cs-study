@@ -4,6 +4,7 @@
   + [IoC (Inversion of Contol)]
   + [DI (Dependency Injection)]
   + [AOP (Aspect-Oriented Programming)]
++ [Spring Boot](#spring-boot)
 
 ***
 
@@ -38,3 +39,28 @@ Application Context 등장 이후, 구현 객체는 자신의 로직을 실행�
 정적인 클래스 의존관계를 변경하지 않고, 동적인 객체 인스턴스 의존관계를 변경할 수 있다.
 
 ### AOP (Aspect-Oriented Programming)
+
+## Spring Boot
+
++ 의존성 관리
+
+  'spring-boot-start'을 통해 라이브러리 의존성을 간단하게 관리할 수 있습니다.
+  
+  기존에는 라이브러리 버전을 각각 입력해야 했지만,
+  
+  spring-boot-start 라이브러리 덕분에 스프링 및 서드 파티 라이브러리들을 호환되는 버전으로 자동으로 다운로드합니다.
+  
++ 자동 설정
+
+  DB, Template 등을 사용하기 위해서 필요한 Datasource, View 등 관련된 설정들을 자동으로 등록해준다.
+  
+  @SpringBootApplication에 있는 @EnableAutoConfiguration이 그 역할을 한다.
+
++ 내장 WAS
+
++ 모니터링
+
+
+: 스프링 프레임워크 기반 프로젝트를 어려운 설정이나, WAS에 대한 설정 없이 바로 개발에 들어갈 수 있도록 만든 프레임워크이다.
+
+- 스프링 프레임워크를 사용하려면 많은 XML 설정 파일들을 장성해야하고, 기존에 사용했던 설정들을 copy and paste하거나 검색을 통해 일일이 설정을 해야하나 스프링 부트를 사용하면 복잡한 설정 없이 쉽고 빠르게 프레임워크를 사용할 수 있다.
